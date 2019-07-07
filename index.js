@@ -2,7 +2,7 @@
 
 if('serviceWorker' in navigator) {
   navigator.serviceWorker
-           .register('https://sharadcodes.github.io/pwa-test/sw.js')
+           .register('./sw.js')
            .then(function() { console.log('Service Worker Registered'); });
 }
 
