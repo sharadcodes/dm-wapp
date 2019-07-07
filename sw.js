@@ -2,13 +2,7 @@ self.addEventListener('install', function(e) {
  e.waitUntil(
    caches.open('video-store').then(function(cache) {
      return cache.addAll([
-          `/`,
-          `/index.html`,
-          `/assets/main.css`,
-          `/assets/main.js`,
-          `/assets/icons-512.png`,
-          `/assets/icons-192.png`,
-          `/assets/`
+       '/'
      ]);
    })
  );
