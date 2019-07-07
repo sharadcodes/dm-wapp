@@ -8,7 +8,7 @@ self.addEventListener('install', function(e) {
           `/assets/main.js`,
           `/assets/icons-512.png`,
           `/assets/icons-192.png`,
-          `/assets`
+          `/assets/`
      ]);
    })
  );
