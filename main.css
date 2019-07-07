@@ -13,8 +13,8 @@ header {
 }
 
 #dm{
-    margin: 10% 10% 0% 10%;
     display: grid;
+    grid-gap: 1.5rem;
 }
 
 #dm-in{
@@ -24,7 +24,6 @@ header {
     padding: 20px;
     border: 4px #075E54 solid;
     border-radius: .5rem;
-    margin: 4% 0%;
 }
 
 #dm-btn{
