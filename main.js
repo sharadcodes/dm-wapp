@@ -4,7 +4,7 @@ function reply_click(clicked_id) {
   navigator.vibrate([80]);
   if (
     clicked_id != "backspace" &&
-    document.getElementById("c-no").innerText.length <= 14
+    document.getElementById("c-no").innerText.length < 16
   ) {
     if (flag === true) {
       flag = false;
@@ -25,5 +25,6 @@ function reply_click(clicked_id) {
 function sendDM() {
   navigator.vibrate([80]);
   var dm_input_num = document.getElementById("c-no").innerText;
-  window.location.href = "https://api.whatsapp.com/send?phone=+91" + dm_input_num;
+  window.location.href =
+    "https://api.whatsapp.com/send?phone=+91" + dm_input_num;
 }
