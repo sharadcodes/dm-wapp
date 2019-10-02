@@ -23,6 +23,7 @@ function reply_click(clicked_id) {
 }
 
 function sendDM() {
+  navigator.vibrate([500]);
   var dm_input_num = document.getElementById("c-no").innerText;
   window.location.href = "https://api.whatsapp.com/send?phone=" + dm_input_num;
 }
