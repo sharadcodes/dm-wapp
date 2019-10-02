@@ -1,38 +1,86 @@
+@import url("https://fonts.googleapis.com/css?family=Fredoka+One|Squada+One&display=swap");
+
 * {
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  outline: none !important;
 }
 
-header {
-    color: #ECE5DD;
-    background-color: #075E54;
-    padding: 5% 0% 10% 5%;
-    font-size: 1.2rem;
-    font-family: sans-serif;
+main {
+  display: grid;
+  justify-content: center;
+  grid-template-rows: 1fr 4fr 1fr;
+  height: 100vh;
+  padding: 1.4rem;
+  grid-gap: 1.4rem;
 }
 
-#dm{
-    display: grid;
-    padding: 1.4rem;
-    grid-gap: 1.5rem;
+#n-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#dm-in{
-    color: black;
-    font-family: sans-serif;
-    font-size: 20px;
-    padding: 20px;
-    border: 4px #075E54 solid;
-    border-radius: .5rem;
+#c-no {
+  font-family: "Squada One";
+  font-size: 2.5rem;
 }
 
-#dm-btn{
-    background-color: #075E54;
-    color: #ECE5DD;
-    font-family: sans-serif;
-    padding: 20px;
-    border: 0px;
-    border-radius: .5rem;
-    cursor: pointer;
+#backspace img {
+  width: 2rem;
+}
+
+#keypad {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.key {
+  font-family: "Squada One";
+  border-radius: 100%;
+  border: 3px solid #25d366;
+  font-size: 2rem;
+  width: 6rem;
+  height: 6rem;
+  background: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.8s;
+}
+
+#image {
+  border: none;
+  max-height: 5rem;
+}
+
+.key:hover,
+.key:hover img {
+  background-color: #25d366 !important;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#send {
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  height: 6rem;
+}
+
+#send img {
+  max-width: 50px;
+  transition-duration: 0.8s;
+}
+
+#send:hover {
+  background-color: #25d366;
 }
