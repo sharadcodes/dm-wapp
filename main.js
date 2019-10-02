@@ -1,6 +1,7 @@
 var flag = true;
 
 function reply_click(clicked_id) {
+  navigator.vibrate([500]);
   if (
     clicked_id != "backspace" &&
     document.getElementById("c-no").innerText.length <= 14
@@ -20,7 +21,6 @@ function reply_click(clicked_id) {
     document.getElementById("c-no").innerText = new_number;
   }
 }
-
 
 function sendDM() {
   var dm_input_num = document.getElementById("c-no").innerText;
